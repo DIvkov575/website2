@@ -80,37 +80,37 @@ main {
         }
     }
 
-        #d2-inner {
-            margin: 0 auto 0 auto;
-            padding: 2rem;
+    #d2-inner {
+        margin: 5rem auto 5rem auto;
+        padding: 2rem;
 
-            height: calc(0rem - 10%);
-            max-width: 1000px;
-            text-align: center;
+        height: calc(0rem - 10%);
+        max-width: 1000px;
+        text-align: center;
 
-            #counters {
-                display: flex;
-                justify-content: space-around;
-                max-width: 600px;
-                margin: 1rem auto 0rem auto;
-                div {
-                    padding: 0.6rem !important;
+        #counters {
+            display: flex;
+            justify-content: space-around;
+            max-width: 600px;
+            margin: 1rem auto 0rem auto;
+            div {
+                padding: 0.6rem !important;
 
-                }
             }
-
-    }
-
-        #d3-inner {
-            margin: 0 auto 0 auto;
-            padding: 2rem;
-
-            height: calc(12rem - 10%);
-            max-width: 1200px;
         }
 
+}
+
+    #d3-inner {
+        margin: 5rem auto 5rem auto;
+        padding: 2rem;
+
+        height: calc(12rem - 10%);
+        max-width: 1200px;
+    }
+
     #d4-inner {
-        margin: 0 auto 0 auto;
+        margin: 5rem auto 5rem auto;
         padding: 2rem;
 
         height: calc(16rem - 10%);
@@ -120,19 +120,29 @@ main {
             margin-left: 1.5rem
         }
     }
-    #d5 {
+    #d6 {
         margin-top: 1rem;
-            background-color: var(--grey);
-        #d5-inner {
+        background-color: var(--grey);
+
+        #d6-inner {
             margin: 0 auto 0 auto;
             padding: 2rem;
 
             height: calc(16rem - 10%);
-            max-width: 1200px;
+            display: flex;
+            justify-content: center;
 
-            ul {
-                margin-left: 1.5rem
+            .image-wrapper {
+                margin: 10px;
+                width: 40px;
+                height: 40px;
+                img {
+                    width: 100%;
+                }
             }
+
+
         }
     }
+
 }
