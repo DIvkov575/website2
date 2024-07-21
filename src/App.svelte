@@ -14,15 +14,14 @@
 
 
     <div id="d1">
-        <div id="d1-inner">
-            <div id="logo"><img src="
-            /favicon.svg" alt="logo"></div>
-            <h1>Belmont School of Code.</h1>
-        </div>
+        <img src="/bg2.png" alt="generic bg">
+        <h1>Belmont School of Code.</h1>
     </div>
 
-    <div id="d2">
-        <a class="box" style="padding: 0 0.75rem 0 0.75rem"><h2>About BSC</h2></a>
+    <div class="full-width-container"  id="d2">
+        <!--        <div class="box" style="padding: 0 0.75rem 0 0.75rem"><h2>About BSC</h2></div>-->
+        <!--        <h2>About BSC</h2>-->
+        <h1 style="color: black">BSC</h1>
         <div style="height: 0.5rem"></div>
         <h3>BSC is a non-profit organization, devoted to creating a computer science education, accessible to everyone.</h3>
         <h3>BSC offers seminars and classes, with proceedings going towards improving the BSC content and education charities in Boston</h3>
@@ -32,11 +31,17 @@
             <div class="box"><h3>$<Countup value={2500}/>+ donated</h3></div>
         </div>
 
+        <div id="npo_logos">
+            <div class="logo-wrapper"><img src="/gwc_logo.png" alt="gwc_logo"></div>
+            <div class="logo-wrapper"><img src="/BEDF_logo.jpeg" alt="Boston Education Fund logo"></div>
+            <div class="logo-wrapper"><img src="/bgc_logo.png" alt="black girls who code logo"></div>
+        </div>
+
     </div>
 
     <div class="full-width-container" id="d3">
         <div class="inner-full-width-container">
-            <h2>BSC <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank" class="box" style="margin-left: 0.1rem">Boston</a> 2024</h2>
+            <h1>BSC <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank" class="box" style="margin-left: 0.1rem">Boston</a> 2024</h1>
             <div style="height: 0.75rem"></div>
             <h3>2 FREE virtual seminars <u>July 13&14,  2024</u> from <u>6:00-7:30 PM</u></h3>
             <h3> Topics include: Web design with Google Sites and Wix, internet and website architecture, building websites in HTML/CSS, and publishing website with Vercel</h3>
@@ -54,7 +59,7 @@
 
     <div class="full-width-container" id="d4">
         <div class="inner-full-width-container">
-            <h2><a href="https://forms.gle/T7vFU1fbsx5aQjJs8" target="_blank" class="box">Learn</a>to code!</h2>
+            <h1><a href="https://forms.gle/T7vFU1fbsx5aQjJs8" target="_blank" class="box">Learn</a>to code!</h1>
             <div style="height: 0.75rem"></div>
 
             <h3>Affordable Python classes for middle and high-schoolers. Proceedings go towards charity. Course completion time varies.</h3>
@@ -77,14 +82,12 @@
 
     <div id="d5" class="full-width-container">
         <div class="inner-full-width-container">
-            <h2><a href="https://account.venmo.com/u/Belmontcodes" target="_blank" class="box">Donate</a>!</h2>
+            <h1><a href="https://account.venmo.com/u/Belmontcodes" target="_blank" class="box">Donate</a>!</h1>
             <div style="height: 0.75rem"></div>
 
             <h3>Your funds will go towards:</h3>
             <h3>Improving our content, making free seminars possible, site & service fees, and various charities in the Boston Area</h3>
 
-            <div style="height: 1.4rem"></div>
-            <h3>Anything Helps</h3>
         </div>
 
         <a href="https://account.venmo.com/u/Belmontcodes" target="_blank" >
@@ -100,7 +103,7 @@
             <a href="https://www.linkedin.com/company/belmont-school-of-code/?viewAsMember=true"><div class="image-wrapper"><img src="/LinkedinIcon.svg" alt="linkedin-icon"></div></a>
 
             {#if visible}
-                <div class="image-wrapper" on:click={gmailClick}><img src="/GoogleIcon.svg" alt="Google Icon"></div>
+                <button class="image-wrapper" on:click={gmailClick} ><img src="/GoogleIcon.svg" alt="Google Icon"></button>
             {:else}
                 <div style="padding-top: 12px"><h3>dmi194@g.harvard.edu</h3></div>
             {/if}

@@ -10,7 +10,5 @@ whats new:
 
 ---
 Todo:
-- add centered logo to #d1
-- add box around "About Us" in #d2
-- add examples of charities + their logos
-- decrease font weight? ... !!! 💢
+- change centered logo color
+- animations: slide in services

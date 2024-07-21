@@ -2,6 +2,7 @@
     --white: #fafaff;
     --black: #333333;
     --grey: #CCC;
+    --dark-grey: #888;
 }
 * {
     font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
@@ -16,7 +17,7 @@ html {
 h1 {
     font-weight: 900;
     font-size: 4.5rem;
-    color: var(--white);
+    /*color: var(--white);*/
     z-index: 1;
     text-wrap: wrap;
     margin: 0;
@@ -29,7 +30,7 @@ h2 {
 }
 h3 {
     font-size: 1.75rem;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 a {
@@ -94,43 +95,57 @@ main {
     background: linear-gradient(#ffffff, #eff5f5);
 
     #d1 {
-        background-color: var(--grey);
         padding: 1rem;
         height: 25rem;
+        overflow: hidden;
 
-        #d1-inner {
-            margin: 0 auto 0 auto;
-            padding: 1rem;
-            display: flex;
-            align-items: flex-end;
-            border: 1px solid var(--white);
-            height: 23rem;
+        img {
+            width: 100%;
+            filter: blur(9px);
+        }
 
-            #logo {
-                width: 100px;
-                position: absolute;
-                left: 50%;
-                top: 10rem;
+        h1 {
+            position: absolute;
+            z-index: 5;
+            top: 22rem;
+            left: 2rem;
+        }
+    }
 
-            }
+    #bsc-logo {
+        width: 125px;
+        position: absolute;
+        left: 50%;
+        top: 8rem;
+        img {
+            width: 100%;
         }
     }
 
     #d2 {
         margin: 4rem auto 4rem auto;
         height: calc(0rem - 10%);
-        max-width: 1000px;
-        text-align: center;
+        max-width: 1075px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
 
         #counters {
-            display: flex;
-            justify-content: space-around;
-            max-width: 500px;
-            margin: 1rem auto 0rem auto;
             div {
+                margin: 1rem 1rem 1rem 0;
                 padding: 0.6rem !important;
 
             }
+        }
+
+        #npo_logos {
+            margin: 1rem 2rem 1rem 0;
+            .logo-wrapper {
+                height: 100px;
+                display: inline-block;
+                img {height: 100%;}
+            }
+
         }
 
 }
@@ -164,6 +179,11 @@ main {
             display: flex;
             justify-content: center;
 
+            button {
+                background: transparent;
+                border: none;
+            }
+
             .image-wrapper {
                 margin: 10px;
                 width: 40px;
@@ -183,12 +203,16 @@ main {
     #d1-inner {
         align-items: center !important;
         justify-content: center !important;
-        #logo {
+        #npo-logo {
             display: none;
         }
     }
     h1 {
         font-size: 3.5rem;
+    }
+
+    #npo_logos {
+        display: none;
     }
 }
 
