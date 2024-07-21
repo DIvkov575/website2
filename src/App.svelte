@@ -3,22 +3,26 @@
 
     let visible = true;
     const gmailClick = () => {
-        visible = false;
-
+        setTimeout(() => {
+            visible = false;
+        }, 15000)
     }
 </script>
 
 <main>
+<!--    https://github.com/DIvkov575/BSC2.3-->
 
 
     <div id="d1">
         <div id="d1-inner">
-            <h1>Belmont School of <span>Code<div style="background-color: white; display: inline-block; height: 0.8rem; width: 0.8rem; border-radius: 6%; margin-left: 1px;"></div></span></h1>
+            <div id="logo"><img src="
+            /favicon.svg" alt="logo"></div>
+            <h1>Belmont School of Code.</h1>
         </div>
     </div>
 
     <div id="d2">
-        <a><h2>About BSC</h2></a>
+        <a class="box" style="padding: 0 0.75rem 0 0.75rem"><h2>About BSC</h2></a>
         <div style="height: 0.5rem"></div>
         <h3>BSC is a non-profit organization, devoted to creating a computer science education, accessible to everyone.</h3>
         <h3>BSC offers seminars and classes, with proceedings going towards improving the BSC content and education charities in Boston</h3>
@@ -32,7 +36,7 @@
 
     <div class="full-width-container" id="d3">
         <div class="inner-full-width-container">
-            <a><h2>BSC <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank" class="box" style="margin-left: 0.1rem">Boston</a> 2024</h2></a>
+            <h2>BSC <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank" class="box" style="margin-left: 0.1rem">Boston</a> 2024</h2>
             <div style="height: 0.75rem"></div>
             <h3>2 FREE virtual seminars <u>July 13&14,  2024</u> from <u>6:00-7:30 PM</u></h3>
             <h3> Topics include: Web design with Google Sites and Wix, internet and website architecture, building websites in HTML/CSS, and publishing website with Vercel</h3>
@@ -50,7 +54,7 @@
 
     <div class="full-width-container" id="d4">
         <div class="inner-full-width-container">
-            <a><h2><a href="https://forms.gle/T7vFU1fbsx5aQjJs8" target="_blank" class="box">Learn</a>to code!</h2></a>
+            <h2><a href="https://forms.gle/T7vFU1fbsx5aQjJs8" target="_blank" class="box">Learn</a>to code!</h2>
             <div style="height: 0.75rem"></div>
 
             <h3>Affordable Python classes for middle and high-schoolers. Proceedings go towards charity. Course completion time varies.</h3>
@@ -73,7 +77,7 @@
 
     <div id="d5" class="full-width-container">
         <div class="inner-full-width-container">
-            <a><h2><a href="https://account.venmo.com/u/Belmontcodes" target="_blank" class="box">Donate</a>!</h2></a>
+            <h2><a href="https://account.venmo.com/u/Belmontcodes" target="_blank" class="box">Donate</a>!</h2>
             <div style="height: 0.75rem"></div>
 
             <h3>Your funds will go towards:</h3>

@@ -15,7 +15,7 @@ html {
 
 h1 {
     font-weight: 900;
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: var(--white);
     z-index: 1;
     text-wrap: wrap;
@@ -56,6 +56,7 @@ a {
     border: 0.2rem solid black;
     padding: 0.2rem;
     margin: 0 0.2rem 0 0;
+    display: inline-block;
 }
 
 .Qr-Wrapper {
@@ -82,7 +83,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    margin: 5rem auto 5rem auto;
+    margin: 4rem auto 4rem auto;
 
     .inner-full-width-container {
         max-width: 800px;
@@ -105,7 +106,13 @@ main {
             border: 1px solid var(--white);
             height: 23rem;
 
+            #logo {
+                width: 100px;
+                position: absolute;
+                left: 50%;
+                top: 10rem;
 
+            }
         }
     }
 
@@ -118,7 +125,7 @@ main {
         #counters {
             display: flex;
             justify-content: space-around;
-            max-width: 600px;
+            max-width: 500px;
             margin: 1rem auto 0rem auto;
             div {
                 padding: 0.6rem !important;
@@ -172,9 +179,49 @@ main {
 
 }
 
+@media (max-width: 700px) {
+    #d1-inner {
+        align-items: center !important;
+        justify-content: center !important;
+        #logo {
+            display: none;
+        }
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+}
 
-@media (max-width: 1162px) {
-    * {
+@media (min-width: 701px) and (max-width: 1130px) {
+    h1 {
+        font-size: 4rem !important;
+    }
+}
+
+@media (max-width: 1130px) {
+    li h3{
+        text-align: left !important;
+    }
+    ul {
+        padding-left: 1rem;
+    }
+
+    h3, h2, h1 {
         text-align: center;
+    }
+    #d2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .full-width-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
     }
 }
