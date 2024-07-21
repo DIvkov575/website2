@@ -17,8 +17,9 @@
         </div>
     </div>
 
-    <div id="d2-inner">
+    <div id="d2">
         <a><h2>About BSC</h2></a>
+        <div style="height: 0.5rem"></div>
         <h3>BSC is a non-profit organization, devoted to creating a computer science education, accessible to everyone.</h3>
         <h3>BSC offers seminars and classes, with proceedings going towards improving the BSC content and education charities in Boston</h3>
 
@@ -29,44 +30,69 @@
 
     </div>
 
-    <div id="d3-inner">
-        <a><h2>BSC <a class="box" style="margin-left: 0.1rem">Boston</a> 2024</h2></a>
-        <div style="height: 0.4rem"></div>
-        <h3>2 FREE virtual seminars on <u>July 13-14, 2024</u> from <u>6:00-7:30 PM</u></h3>
-        <h3> Topics include: Web design with Google Sites and Wix, internet and website architecture, building websites in HTML/CSS, and publishing website with Vercel</h3>
-        <h3>$200 / 20 classes</h3>
+    <div class="full-width-container" id="d3">
+        <div class="inner-full-width-container">
+            <a><h2>BSC <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank" class="box" style="margin-left: 0.1rem">Boston</a> 2024</h2></a>
+            <div style="height: 0.75rem"></div>
+            <h3>2 FREE virtual seminars <u>July 13&14,  2024</u> from <u>6:00-7:30 PM</u></h3>
+            <h3> Topics include: Web design with Google Sites and Wix, internet and website architecture, building websites in HTML/CSS, and publishing website with Vercel</h3>
+            <h3>$200 / 20 classes</h3>
+        </div>
 
-        <a href=""><img src="" alt=""></a>
+
+        <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank">
+            <div class="Qr-Wrapper">
+                <img src="/BSCBOSTONQR.png" alt="BSC-Boston-Qr-code">
+                <h3>Click Me</h3>
+            </div>
+        </a>
     </div>
 
-    <div id="d4-inner">
-        <a><h2><a class="box">Learn</a>to code!</h2></a>
-        <div style="height: 0.6rem"></div>
+    <div class="full-width-container" id="d4">
+        <div class="inner-full-width-container">
+            <a><h2><a href="https://forms.gle/T7vFU1fbsx5aQjJs8" target="_blank" class="box">Learn</a>to code!</h2></a>
+            <div style="height: 0.75rem"></div>
 
-        <h3>Affordable Python classes for middle and high-schoolers. Proceedings go towards charity. Course completion time varies.</h3>
-        <div style="height: 0.2rem"></div>
+            <h3>Affordable Python classes for middle and high-schoolers. Proceedings go towards charity. Course completion time varies.</h3>
+            <div style="height: 0.2rem"></div>
 
-        <ul>
-            <li><h3>Variables, operators, conditions, Loops, builtin Data-structures</h3></li>
-            <li><h3>OOP, Decorators, Lambda, Error handling</h3></li>
-            <li><h3>Students choice of Website development, Games, Data-Science or Algorithms</h3></li>
-        </ul>
+            <ul>
+                <li><h3>Variables, operators, conditions, Loops, builtin Data-structures</h3></li>
+                <li><h3>OOP, Decorators, Lambda, Error handling</h3></li>
+                <li><h3>Students choice of Website development, Games, Data-Science or Algorithms</h3></li>
+            </ul>
+        </div>
 
-        <a href=""><img src="" alt=""></a>
+        <a href="https://forms.gle/T7vFU1fbsx5aQjJs8" target="_blank">
+            <div class="Qr-Wrapper">
+                <img src="/BSCPYTHONQR.png" alt="BSC-Boston-Qr-code">
+                <h3>Click Me</h3>
+            </div>
+        </a>
     </div>
 
-    <div id="d4-inner">
-        <a><h2><a class="box">Donate</a>!</h2></a>
-        <div style="height: 0.6rem"></div>
+    <div id="d5" class="full-width-container">
+        <div class="inner-full-width-container">
+            <a><h2><a href="https://account.venmo.com/u/Belmontcodes" target="_blank" class="box">Donate</a>!</h2></a>
+            <div style="height: 0.75rem"></div>
 
-        <h3>Your funds will go towards:</h3>
-        <h3>Improving our content, making free seminars possible, site & service fees, and various charities in the Boston Area</h3>
+            <h3>Your funds will go towards:</h3>
+            <h3>Improving our content, making free seminars possible, site & service fees, and various charities in the Boston Area</h3>
 
-        <a href=""><img src="" alt=""></a>
+            <div style="height: 1.4rem"></div>
+            <h3>Anything Helps</h3>
+        </div>
+
+        <a href="https://account.venmo.com/u/Belmontcodes" target="_blank" >
+            <div class="Qr-Wrapper">
+                <img src="/VenmoQr.png" alt="BSC-Boston-Qr-code">
+                <h3 style="top: -0.75rem">Click Me</h3>
+            </div>
+        </a>
     </div>
 
-    <div id="d6">
-        <div id="d6-inner">
+    <div id="footer">
+        <div id="footer-inner">
             <a href="https://www.linkedin.com/company/belmont-school-of-code/?viewAsMember=true"><div class="image-wrapper"><img src="/LinkedinIcon.svg" alt="linkedin-icon"></div></a>
 
             {#if visible}
