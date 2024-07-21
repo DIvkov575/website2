@@ -1,0 +1,123 @@
+:root {
+    --white: #efefef
+}
+* {
+    font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: var(--white);
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.button1 {
+    border: 0.2rem solid black;
+    padding: 0.2rem;
+    margin: 0.4rem 0 0 0 ;
+
+    display: inline-block;
+    text-align: center;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#d1 {
+    background-image: url("/space.avif");
+    padding: 1rem;
+    height: 25rem;
+
+    #d1-inner {
+        margin: 0 auto 0 auto;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-end;
+        border: 1px solid var(--white);
+        height: 23rem;
+
+        h1 {
+            font-family: BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+            font-weight: 900;
+            font-size: 5rem;
+            color: var(--white);
+            z-index: 1;
+            text-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            line-height: 4rem;
+            position:relative;
+        }
+
+    }
+}
+
+#d2 {
+    border: 1px solid red;
+    padding: 1rem;
+    height: 20rem;
+
+    #d2-inner {
+        margin: 0 auto 0 auto;
+        padding: 2rem;
+
+        height: 16rem;
+        max-width: 1100px;
+        border: 0.15rem solid black;
+
+
+
+        #learn-box {
+            border: 0.2rem solid black;
+            padding: 0.2rem;
+            margin: 0 0.2rem 0 0;
+        }
+    }
+
+}
+
+#d3 {
+    border: 1px solid red;
+    padding: 1rem;
+    height: 20rem;
+
+    #d3-inner {
+        margin: 0 auto 0 auto;
+        padding: 2rem;
+
+        height: 16rem;
+        max-width: 1100px;
+        border: 0.15rem solid black;
+
+        font-size: 1.5rem;
+    }
+}
+
+#d4 {
+    border: 1px solid red;
+    padding: 1rem;
+    height: 20rem;
+
+    #d4-inner {
+        margin: 0 auto 0 auto;
+        padding: 2rem;
+
+        height: 16rem;
+        max-width: 1100px;
+        border: 0.15rem solid black;
+
+        font-size: 1.5rem;
+        ul {
+            margin-left: 1.5rem
+        }
+    }
+}
