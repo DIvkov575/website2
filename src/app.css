@@ -76,14 +76,19 @@ a {
     }
 }
 
-.full-width-container {
+.fw-wrapper {
+    padding: 5rem 0 5rem 0;
+}
+
+.fw-container {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 2rem;
-    margin: 4rem auto 4rem auto;
+    margin-left: auto;
+    margin-right: auto;
 
     .inner-full-width-container {
         max-width: 800px;
@@ -97,6 +102,7 @@ main {
         padding: 1rem;
         height: 25rem;
         overflow: hidden;
+        margin-bottom: 4rem;
 
         img {
             margin: auto;
@@ -116,7 +122,6 @@ main {
     }
 
     #d2 {
-        margin: 4rem auto 4rem auto;
         height: calc(0rem - 10%);
         max-width: 1075px;
         display: flex;
@@ -209,7 +214,7 @@ main {
 }
 
 @media (max-width: 1130px) {
-    .full-width-container {
+    .fw-container {
         justify-content: flex-start;
     }
 

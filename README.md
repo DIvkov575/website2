@@ -10,4 +10,4 @@ whats new:
 
 ---
 Todo:
-- slide in aimations
+- more spacing - minimalism
