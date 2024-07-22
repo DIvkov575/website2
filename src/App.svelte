@@ -12,8 +12,8 @@
         }, 15000)
     }
 
-    let options1 =  {}
-    let options2 = {}
+    let options =  {}
+    let disable = false;
 
     let show_d2 = false;
     let show_d3 = false;
@@ -22,8 +22,6 @@
 </script>
 
 <main>
-    <button style="width: 500px" on:click={() => {show_d2 = !show_d2; show_d3 = !show_d3; show_d4 = !show_d4; show_d5 = !show_d5}}></button>
-
     <div id="d1">
         <img src="/bg2.png" alt="generic bg">
         <div>
@@ -33,8 +31,8 @@
 
     <div
         class="fw-wrapper"
-        use:inview={options1}
-        on:inview_leave ={(_) => show_d2 = false}
+        use:inview={options}
+        on:inview_leave ={(_) => show_d2 = Boolean(Number(false) + Number(disable))}
         on:inview_enter ={(_) => show_d2 = true}>
 
         {#if show_d2}
@@ -61,8 +59,8 @@
 
     <div
         class="fw-wrapper"
-        use:inview={options1}
-        on:inview_leave ={(_) => show_d3 = false}
+        use:inview={options}
+        on:inview_leave ={(_) => show_d3 = Boolean(Number(false) + Number(disable))}
         on:inview_enter ={(_) => show_d3 = true}>
 
         {#if show_d3}
@@ -87,8 +85,8 @@
 
     <div
         class="fw-wrapper"
-        use:inview={options1}
-        on:inview_leave ={(_) => show_d4 = false}
+        use:inview={options}
+        on:inview_leave ={(_) => show_d4 = Boolean(Number(false) + Number(disable))}
         on:inview_enter ={(_) => show_d4 = true}>
         {#if show_d4}
             <div transition:fly={{x:-200, duration: 800}} class="fw-container" id="d4">
@@ -115,8 +113,8 @@
 
     <div
         class="fw-wrapper"
-        use:inview={options1}
-        on:inview_leave ={(_) => show_d5 = false}
+        use:inview={options}
+        on:inview_leave ={(_) => show_d5 = Boolean(Number(false) + Number(disable))}
         on:inview_enter ={(_) => show_d5 = true}>
         {#if show_d5}
             <div transition:fly={{x:-200, duration: 800}} id="d5" class="fw-container">
@@ -139,7 +137,11 @@
         {/if}
     </div>
 
-    <div id="footer">
+    <div
+        id="footer"
+        use:inview={options}
+        on:inview_enter = {(_) => {disable = true; console.log(disable)}}>
+
         <div id="footer-inner">
             <a href="https://www.linkedin.com/company/belmont-school-of-code/?viewAsMember=true"><div class="image-wrapper"><img src="/LinkedinIcon.svg" alt="linkedin-icon"></div></a>
 

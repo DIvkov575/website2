@@ -77,7 +77,7 @@ a {
 }
 
 .fw-wrapper {
-    padding: 5rem 0 5rem 0;
+    padding: 6rem 0 6rem 0;
 }
 
 .fw-container {
@@ -97,12 +97,13 @@ a {
 
 main {
     background: linear-gradient(#ffffff, #eefafa);
+    height: 100%;
 
     #d1 {
         padding: 1rem;
         height: 25rem;
         overflow: hidden;
-        margin-bottom: 4rem;
+        margin-bottom: 7rem;
 
         img {
             margin: auto;
@@ -110,7 +111,6 @@ main {
         }
 
         div {
-            /*top: 8rem;*/
             position: absolute;
             z-index: 2;
             width: 100%;
@@ -166,7 +166,7 @@ main {
         }
     }
     #footer{
-        margin-top: 1rem;
+        margin-top: 7rem;
         background-color: var(--grey);
 
         #footer-inner {
