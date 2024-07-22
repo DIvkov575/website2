@@ -1,8 +1,6 @@
 <script lang="ts">
     import {fly} from 'svelte/transition';
-
     import { inview } from 'svelte-inview';
-
     import Countup from './lib/Countup.svelte';
 
     let visible = true;
@@ -13,12 +11,15 @@
     }
 
     let options =  {}
-    let disable = false;
-
     let show_d2 = false;
     let show_d3 = false;
     let show_d4 = false;
     let show_d5 = false;
+
+    const d2SetFalse = () => {if (window.innerWidth > 500) show_d2 = false};
+    const d3SetFalse = () => {if (window.innerWidth > 500) show_d3 = false};
+    const d4SetFalse = () => {if (window.innerWidth > 500) show_d4 = false};
+    const d5SetFalse = () => {if (window.innerWidth > 500) show_d5 = false};
 </script>
 
 <main>
@@ -32,7 +33,7 @@
     <div
         class="fw-wrapper"
         use:inview={options}
-        on:inview_leave ={(_) => show_d2 = Boolean(Number(false) + Number(disable))}
+        on:inview_leave ={(_) => d2SetFalse()}
         on:inview_enter ={(_) => show_d2 = true}>
 
         {#if show_d2}
@@ -60,7 +61,7 @@
     <div
         class="fw-wrapper"
         use:inview={options}
-        on:inview_leave ={(_) => show_d3 = Boolean(Number(false) + Number(disable))}
+        on:inview_leave ={(_) => d3SetFalse()}
         on:inview_enter ={(_) => show_d3 = true}>
 
         {#if show_d3}
@@ -86,7 +87,7 @@
     <div
         class="fw-wrapper"
         use:inview={options}
-        on:inview_leave ={(_) => show_d4 = Boolean(Number(false) + Number(disable))}
+        on:inview_leave ={(_) => d4SetFalse()}
         on:inview_enter ={(_) => show_d4 = true}>
         {#if show_d4}
             <div transition:fly={{x:-200, duration: 800}} class="fw-container" id="d4">
@@ -114,7 +115,7 @@
     <div
         class="fw-wrapper"
         use:inview={options}
-        on:inview_leave ={(_) => show_d5 = Boolean(Number(false) + Number(disable))}
+        on:inview_leave ={(_) => d5SetFalse()}
         on:inview_enter ={(_) => show_d5 = true}>
         {#if show_d5}
             <div transition:fly={{x:-200, duration: 800}} id="d5" class="fw-container">
@@ -137,18 +138,14 @@
         {/if}
     </div>
 
-    <div
-        id="footer"
-        use:inview={options}
-        on:inview_enter = {(_) => {disable = true; console.log(disable)}}>
-
+    <div id="footer">
         <div id="footer-inner">
             <a href="https://www.linkedin.com/company/belmont-school-of-code/?viewAsMember=true"><div class="image-wrapper"><img src="/LinkedinIcon.svg" alt="linkedin-icon"></div></a>
 
             {#if visible}
                 <button class="image-wrapper" on:click={gmailClick} ><img src="/GoogleIcon.svg" alt="Google Icon"></button>
             {:else}
-                <div style="padding-top: 12px"><h3>dmi194@g.harvard.edu</h3></div>
+                <div style="padding-top: 12px"><h3>dmitriyivkov@belmontcodes.com</h3></div>
             {/if}
 
             <a href="https://www.instagram.com/belmontschoolofcode/"><div class="image-wrapper"><img src="/InstagramIcon.svg" alt="instagram-icon"></div></a>

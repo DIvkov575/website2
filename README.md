@@ -11,3 +11,8 @@ whats new:
 ---
 Todo:
 - more spacing - minimalism
+- decrease fonts - create seamless transition  between sections
+- ensure diva don't unslide
+- compress images or research?
+- multiple Pages
+- 
