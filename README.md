@@ -10,5 +10,4 @@ whats new:
 
 ---
 Todo:
-- change centered logo color
-- animations: slide in services
+- slide in aimations

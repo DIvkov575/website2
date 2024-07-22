@@ -15,12 +15,12 @@
 
     <div id="d1">
         <img src="/bg2.png" alt="generic bg">
-        <h1>Belmont School of Code.</h1>
+        <div>
+            <h1>Belmont School of Code.</h1>
+        </div>
     </div>
 
     <div class="full-width-container"  id="d2">
-        <!--        <div class="box" style="padding: 0 0.75rem 0 0.75rem"><h2>About BSC</h2></div>-->
-        <!--        <h2>About BSC</h2>-->
         <h1 style="color: black">BSC</h1>
         <div style="height: 0.5rem"></div>
         <h3>BSC is a non-profit organization, devoted to creating a computer science education, accessible to everyone.</h3>
@@ -39,37 +39,33 @@
 
     </div>
 
-    <div class="full-width-container" id="d3">
-        <div class="inner-full-width-container">
-            <h1>BSC <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank" class="box" style="margin-left: 0.1rem">Boston</a> 2024</h1>
-            <div style="height: 0.75rem"></div>
-            <h3>2 FREE virtual seminars <u>July 13&14,  2024</u> from <u>6:00-7:30 PM</u></h3>
-            <h3> Topics include: Web design with Google Sites and Wix, internet and website architecture, building websites in HTML/CSS, and publishing website with Vercel</h3>
-            <h3>$200 / 20 classes</h3>
-        </div>
+        <div class="full-width-container" id="d3">
+            <div class="inner-full-width-container">
+                <h1>BSC <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank" class="box" style="margin-left: 0.1rem">Boston</a> 2024</h1>
+                <div style="height: 0.75rem"></div>
 
-
-        <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank">
-            <div class="Qr-Wrapper">
-                <img src="/BSCBOSTONQR.png" alt="BSC-Boston-Qr-code">
-                <h3>Click Me</h3>
+                <h3>2 FREE virtual seminars <u>July 13&14,  2024</u> from <u>6:00-7:30 PM</u></h3>
+                <h3> Topics include: Web design with Google Sites and Wix, internet and website architecture, building websites in HTML/CSS, and publishing website with Vercel</h3>
             </div>
-        </a>
-    </div>
+
+            <a href="https://forms.gle/Uy89J5CXqN9rJrvi9" target="_blank">
+                <div class="Qr-Wrapper">
+                    <img src="/BSCBOSTONQR.png" alt="BSC-Boston-Qr-code">
+                    <h3>Click Me</h3>
+                </div>
+            </a>
+        </div>
 
     <div class="full-width-container" id="d4">
         <div class="inner-full-width-container">
-            <h1><a href="https://forms.gle/T7vFU1fbsx5aQjJs8" target="_blank" class="box">Learn</a>to code!</h1>
+            <h1><a href="https://forms.gle/T7vFU1fbsx5aQjJs8" target="_blank" class="box">Learn</a>to code</h1>
             <div style="height: 0.75rem"></div>
-
-            <h3>Affordable Python classes for middle and high-schoolers. Proceedings go towards charity. Course completion time varies.</h3>
-            <div style="height: 0.2rem"></div>
-
-            <ul>
-                <li><h3>Variables, operators, conditions, Loops, builtin Data-structures</h3></li>
-                <li><h3>OOP, Decorators, Lambda, Error handling</h3></li>
-                <li><h3>Students choice of Website development, Games, Data-Science or Algorithms</h3></li>
+            <h3>Affordable Python classes for middle and high-schoolers. Proceedings go towards charity</h3>
+            <ul style="margin: 0.5rem auto 0.75rem auto; padding-left: 1.5rem">
+                <li><h3>Fundamentals: operators, conditions, Loops, etc</h3></li>
+                <li><h3>Student Choice: Web development, Games, or Data-Science</h3></li>
             </ul>
+            <h3>$200 / 20 classes</h3>
         </div>
 
         <a href="https://forms.gle/T7vFU1fbsx5aQjJs8" target="_blank">
@@ -82,7 +78,7 @@
 
     <div id="d5" class="full-width-container">
         <div class="inner-full-width-container">
-            <h1><a href="https://account.venmo.com/u/Belmontcodes" target="_blank" class="box">Donate</a>!</h1>
+            <h1><a href="https://account.venmo.com/u/Belmontcodes" target="_blank" class="box">Donate</a> Now</h1>
             <div style="height: 0.75rem"></div>
 
             <h3>Your funds will go towards:</h3>

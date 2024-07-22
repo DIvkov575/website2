@@ -92,7 +92,7 @@ a {
 }
 
 main {
-    background: linear-gradient(#ffffff, #eff5f5);
+    background: linear-gradient(#ffffff, #eefafa);
 
     #d1 {
         padding: 1rem;
@@ -100,25 +100,19 @@ main {
         overflow: hidden;
 
         img {
-            width: 100%;
+            margin: auto;
             filter: blur(9px);
         }
 
-        h1 {
+        div {
             position: absolute;
-            z-index: 5;
-            top: 22rem;
-            left: 2rem;
-        }
-    }
-
-    #bsc-logo {
-        width: 125px;
-        position: absolute;
-        left: 50%;
-        top: 8rem;
-        img {
+            z-index: 2;
             width: 100%;
+            top: 12rem;
+            text-align: center;
+            h1 {
+                color: var(--white);
+            }
         }
     }
 
@@ -202,7 +196,7 @@ main {
 @media (max-width: 700px) {
     #d1-inner {
         align-items: center !important;
-        justify-content: center !important;
+        /*justify-content: center !important;*/
         #npo-logo {
             display: none;
         }
@@ -230,16 +224,8 @@ main {
         padding-left: 1rem;
     }
 
-    h3, h2, h1 {
-        text-align: center;
-    }
-    #d2 {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
     .full-width-container {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        justify-content: flex-start;
     }
 
     h2 {
@@ -247,5 +233,21 @@ main {
     }
     h3 {
         font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 951px) {
+    #d1 {
+        img {
+            width: 100%
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    #d1 {
+        img {
+            height: 100%
+        }
     }
 }
